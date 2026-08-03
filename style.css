@@ -1,16 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 :root{
     --branco:white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
-    --Bona-Nova-SC: "Bona Nova SC", serif;
-
+    --cor-e-fundo:#111844;
+    --fundo-senha:#4B5694;
+    --fundo-texto:#7288AE;
+    --borda:#EAE0CF;
+    --Oswald:"Oswald", sans-serif;
 
 }
 *{
-    font-weigt:400;
+    font-weigth:400;
 }
 body{
     color:var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte);
+}
+
+.titulo-principal{
+    font-family: var(--fonte);
+}
+
+.titulo-secundario{
+    font-size: 24px;
+    text-align: center;
+    margin: 80px;
+}
+
+.conteudo-titulo{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cadeado-conteudo{
+    width: 100px;
+}
+.conteudo-senha{
+    margin-top: 80px;
+    background: var(--fundo-senha);
+    padding: 24px;
+    border-bottom: 6px dashed var(--borda);
+    font-size:25x;
+}
+#campo-senha{
+    background-color: var(--fundo-senha);
+    border:none;
+    color:var(--branco);
+    font-size: 40px;
+    width: 70%;
+}
+.parametro{
+    background-color: var(--fundo-texto);
+    border: 2px dashed var(--borda);
+    margin-top: 32px;
+    padding: 24px;
+}
+.parametro-senha_titulo{
+    font-size: 24px;
+}
+.parametro-coluna_senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parametro-senha_botoes{
+    display: flex;
+    justify-content: center;
+}
+.parametro-senha_botao{
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px dashed var(--borda);
+    font-size: 24px;
+    cursor:pointer;
 }
